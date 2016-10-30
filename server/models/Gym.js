@@ -1,4 +1,4 @@
-import Bookshelf from './database'
+import Bookshelf from './database';
 import { Schedule } from './';
 
 export default Bookshelf.Model.extend({

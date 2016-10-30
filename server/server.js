@@ -1,8 +1,9 @@
-var koa = require('koa');
-var app = koa();
+import Koa from 'koa';
+const app = new Koa();
 
-app.use(function *(){
-  this.body = 'Hello World';
+app.use(async (ctx) => {
+    ctx.body = 'Hello world';
 });
 
 app.listen(3000);
+export default app;

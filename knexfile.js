@@ -6,6 +6,9 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'scheduler_dev'
+    },
+    seeds: {
+      directory: './seeds'
     }
   },
 
