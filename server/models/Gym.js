@@ -1,9 +1,9 @@
 import Bookshelf from './database';
-import { Schedule } from './';
+import { Schedule } from './Schedule';
 
 export default Bookshelf.Model.extend({
-  get tableName() { return 'gyms'; }
-  get hasTimestamps() { return true; }
+  get tableName() { return 'gyms'; },
+  get hasTimestamps() { return true; },
 
   schedules() {
     console.log(Schedule);
